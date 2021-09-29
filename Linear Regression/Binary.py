@@ -12,7 +12,7 @@ def displayPredict(clf,actually_y,x):
     print("Predict = " , clf.predict([x])[0])
 
 
-mnist_raw=loadmat("mnist-original.mat")
+mnist_raw=loadmat("Linear Regression/mnist-original.mat")
 mnist={
     "data":mnist_raw["data"].T,
     "target":mnist_raw["label"][0]
