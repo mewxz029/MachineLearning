@@ -16,5 +16,5 @@ knn.fit(x_train,y_train)
 #prediction
 y_pred=knn.predict(x_test)
 
-# print(classification_report(y_test,y_pred,target_names=iris_dataset['target_names']))
+print(classification_report(y_test,y_pred,target_names=iris_dataset['target_names']))
 print("ความแม่นยำ = ",accuracy_score(y_test,y_pred)*100)

@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 #Read Data
-df=pd.read_csv("diabetes.csv")
+df=pd.read_csv("KNN/diabetes.csv")
 # data
 x=df.drop("Outcome",axis=1).values
 # outcome data
