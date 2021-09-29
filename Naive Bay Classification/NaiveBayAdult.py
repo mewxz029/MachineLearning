@@ -17,7 +17,7 @@ def split_feature_class(dataset,feature):
     labels=dataset[feature].copy() #เอาเฉพาะข้อมูล income
     return features,labels
 
-dataset=pd.read_csv("adult.csv")
+dataset=pd.read_csv("Naive Bay Classification/adult.csv")
 dataset=cleandata(dataset)
 
 #split train ,test

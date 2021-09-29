@@ -22,5 +22,7 @@ knn.fit(x_train,y_train)
 #prediction
 y_pred=knn.predict(x_test)
 
+print(classification_report(y_test,y_pred))
+print(confusion_matrix(y_test, y_pred))
 print(pd.crosstab(y_test,y_pred,rownames=['Actually'],colnames=['Prediction'],margins=True))
 
